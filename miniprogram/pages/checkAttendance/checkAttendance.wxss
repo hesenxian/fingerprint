@@ -1,0 +1,136 @@
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.head{
+  text-align: center;
+  font-size: xx-large;
+  color: #6dc8bf;
+  font-weight: bolder;
+  margin-bottom: 20 rpx;
+}
+
+.studentBox{
+  width: 15.5vw;
+  height: 15.5vw;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  font-size: 20rpx;
+  font-weight: bold;
+  margin: 1vw;
+}
+
+.studentBox > image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.studentBox > text{
+  position: relative;
+  top: -7.5px;
+}
+
+.studentBox > view{
+  position: relative;
+  top: -11px;
+}
+
+.cardBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.listBox{
+  display: flex;
+  margin: 5px auto;
+  font-size: 36rpx;
+
+}
+
+.listBox > image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.listBox > text{
+  margin: auto  10rpx;
+}
+
+.listBox> .name{
+ width: 20vw;
+ text-align: center; 
+}
+
+.listBox> .no{
+  width: 30vw;
+  text-align: center; 
+ }
+
+
+
+
+
+.tabs{  
+  position: fixed;
+  z-index: 10;
+  margin: 0;
+  width: 100%;  
+  border-bottom: 2rpx solid #eee;  
+  text-align: center;  
+  line-height: 80rpx;
+  background: #fff;
+  font-size: 14px;
+  justify-content: space-between;
+}  
+.on{ 
+color: #6dc8bf;  
+border-bottom: 5rpx solid #6dc8bf;
+}  
+.tabList{  
+font-size: 29rpx;  
+  display: inline-block;  
+  width: 33.3%;  
+  color: #333; 
+}
+
+.box{
+  display: block;
+  height: 8%;
+  width: 100vw;
+}
+
+.funcbox{
+  
+  position: fixed;
+  z-index: 2;
+  top: 75%;
+  left: 85%;
+  height: 35px;
+  width: 35px;
+}
+
+.funcbox1{
+  
+  position: fixed;
+  z-index: 2;
+  top: 85%;
+  left: 85%;
+  height: 35px;
+  width: 35px;
+}
+
+.tips{
+ 
+  position: fixed;
+  z-index: 2;
+  top: 8%;
+  left: 90%;
+  height: 30px;
+  width: 30px;
+}

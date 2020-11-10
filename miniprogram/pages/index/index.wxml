@@ -1,0 +1,34 @@
+ 
+  <view class="clockBox">                            
+    <image class="clock" mode="widthFix" src="/images/clock.jpg"></image>
+    <view class="date"><text>{{currentDate}}\n{{Week}}</text></view>
+    <view class="time"><text>{{currentTime}}</text></view> 
+    <view class="status" >
+      <view>  <p>设备:{{device_status}}</p> </view>
+      <view>  <p>签到:{{powerstatus}}</p> </view>
+    </view>
+  </view>
+  <view class="task_box"  > 
+   <view class="task" >  
+     <image class="start" src="/images/kaishi.png" bindtap="fingerprintclick"></image>
+     <text class="task_tips" bindtap="fingerprintclick">\n开始签到</text>
+   </view>  
+ 
+   <view class="task" >
+     <image class="end" src="/images/jieshu.png" bindtap="quitclick"></image>
+     <text class="task_tips" bindtap="quitclick">\n结束签到</text> 
+   </view> 
+
+
+  <!-- <view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+    <view class="zan-dialog__mask" bindtap="toggleDialog" />
+     <view class="zan-dialog__container">
+        <view style="text-align:center">          
+        <input style="text-align:center" class="inputBox" bindinput="saveInputValue" password='{{ispassword}}' placeholder="请输入密码" focus="{{focus}}" />   
+        <view bindtap="toggleValue"> <text class="tip">{{valueIsShow?'隐\n藏':'显\n示'}}</text></view>   
+      </view>
+      <button class="OKbutton" bindtap="onEnter" style="width:25vw;height:13vw;" >OK</button>
+    </view>
+  </view>
+  <view style="height:20vw"></view> -->
+</view>

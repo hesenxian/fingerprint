@@ -1,0 +1,81 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "appid": "wx572467d4f6049dd4",
+  "projectname": "%E4%BA%91-%E6%8C%87%E7%BA%B9%E8%80%83%E5%8B%A4",
+  "libVersion": "2.8.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "新增数据",
+          "pathName": "pages/addData/addData",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "管理数据，查看名单",
+          "pathName": "pages/manageData/manageData",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "修改数据",
+          "pathName": "pages/modifyData/modifyData",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "考勤情况",
+          "pathName": "pages/checkAttendance/checkAttendance",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

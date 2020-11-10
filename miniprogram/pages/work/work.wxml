@@ -1,0 +1,37 @@
+<!--pages/work/work.wxml-->
+
+<view class="funbox">
+  <view class="title">数据功能区</view>
+  <view class="fingerbox">
+   <view class="fun">
+     <image class="fun_png" src="/images/tianjia.png" bindtap="enrollclick"></image>
+     <view class="funtips">录入</view> 
+   </view> 
+   <view class="fun" >
+     <image class="fun_png" src="/images/shanchu.png" bindtap="deleteIDclick"></image>
+     <view class="funtips">删除</view> 
+   </view> 
+   <view class="fun" >
+     <image class="fun_png" src="/images/qingkong.png" bindtap="emptyDatabaseclick"></image>
+     <view class="funtips">清空</view> 
+   </view> 
+  </view>
+</view>
+<view class="funbox">
+  <view class="title">数据功能区</view>
+  <view class="fingerbox">
+    <view class="fun" >
+     <image class="fun_png" src="/images/tianjia.png" bindtap="add"></image>
+     <view class="funtips">新增</view> 
+   </view> 
+   <view class="fun">
+     <image class="fun_png" src="/images/chakan.png" bindtap="check"></image>
+     <view class="funtips">查岗</view> 
+   </view> 
+   <view class="fun" >
+     <image class="fun_png" src="/images/xiugai.png" bindtap="manage"></image>
+     <view class="funtips">管理</view> 
+   </view> 
+ 
+  </view>
+</view>

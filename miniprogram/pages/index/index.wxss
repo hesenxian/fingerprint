@@ -1,0 +1,151 @@
+
+ .clock{
+  border-radius: 20px;
+  width: 94vw;
+  position: absolute; 
+  top: 2vw;
+  left: 3vw;
+}
+.time{
+  position: absolute;
+  z-index: 1;
+  top: 36.5vw;
+  left: 5vw;
+  color: aliceblue;
+  font-size: 11vw;
+  font-weight: bolder;
+}
+
+.date{
+  position: absolute;
+  z-index: 1;
+  left: 6vw;
+  top: 2.5vw;
+  color: aliceblue;
+  font-size: 5.5vw;
+  font-weight: bold;
+  text-align: right;
+}
+
+.status{
+  position: absolute;
+  top: 38.5vw;
+  text-align: left;
+  right: 5vw;
+  color: rgb(255, 255, 255);
+  font-weight:bolder;
+  font-size: 4vw;
+  border-radius: 10px;
+}
+
+
+.zan-dialog__mask {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 10;
+ background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.4);
+ display:none;
+}
+
+.zan-dialog__container {
+ position: fixed;
+ top: 40vw;
+ width: 76vw;
+ height: 50vw;
+ left: 13vw;
+ 
+ background: #ffffff;
+ transform: translateY(300%);
+ transition: all 0.4s ease;
+ z-index: 12;
+ border-radius: 20rpx;
+ box-shadow: 0px 3px 3px 2px rgb(136, 133, 133);
+}
+
+.zan-dialog--show .zan-dialog__container {
+ transform: translateY(0);
+}
+
+.zan-dialog--show .zan-dialog__mask {
+ display: block;
+}
+
+.inputBox{
+ border-radius: 20rpx;
+ font-size: 6vw;
+ margin-top: 12vw;
+ background-color: rgb(224, 220, 214);
+ width: 40vw;
+ margin-left: 17.5vw;
+ height: 10vw;
+}
+
+.tip{
+ height: 8vw;
+ width: 5vw;
+ font-size: 3vw;
+ position: absolute;
+ background-color: rgb(93, 219, 93);
+ border-radius: 20rpx;
+ color: #ffffff;
+ left: 60vw;
+ top: 13vw;
+}
+
+.OKbutton{
+ margin-top: 8vw;
+ background-color: rgb(112, 202, 187);
+ border-radius: 20rpx;
+ color: #ffffff;
+ font-size: 7vw;
+}
+
+.start{
+ position: absolute;
+ width: 20vw;
+ height: 20vw;
+ margin-top: 5vw;
+ left: 67vw;
+}
+.end{
+ position: absolute;
+ width: 20vw;
+ height: 20vw;
+margin-top: 5vw;
+ left: 67vw;
+}
+
+
+.task{
+ margin-top: 2vw;
+ width: 92vw;
+ height: 30vw;
+ background-color: rgb(255, 255, 255);
+ margin-left: 3.5vw;
+ border-radius: 20px;
+ border-color: #a2c5c2;
+ border-style: solid;
+ text-align: center;
+}
+
+.task_box{
+ position: absolute;
+ top: 51vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.task_tips{
+ margin: 12vw auto ;
+ color: blueviolet;
+ font-size: larger;
+ display: block;
+ height: 25vw;
+ width: 40vw;
+}

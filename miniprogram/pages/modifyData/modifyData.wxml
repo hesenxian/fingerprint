@@ -1,0 +1,47 @@
+<view class="head">修改学生信息</view>
+
+<block wx:for="{{tt}}">
+  <form bindsubmit="datasubmit">
+    <view class="labelBox">
+      <label>指纹：</label>
+      <input type="number" name="F_id" value="{{item.F_id}}" />
+    </view>
+    <view class="labelBox">
+      <label>学号：</label>
+      <input type="number" name="no" value="{{item.no}}" />
+    </view>
+    <view class="labelBox">
+      <label>姓名：</label>
+      <input type="text" name="name" value="{{item.name}}" />
+    </view>
+    <view class="labelBox">
+      <label>班级：</label>
+      <input type="text" name="class" value="{{item.class}}" />
+    </view>
+    <view class="labelBox">
+      <label>院系：</label>
+      <input type="text" name="department" value="{{item.department}}" />
+    </view>
+      <view class="labelBox">
+        <label>性别：</label>
+        <input type="text" name="sex" value="{{item.sex}}" />
+      </view>
+      <view class="labelBox">
+        <label>签到：</label>
+        <input type="text" name="status" value="{{item.status}}" />
+      </view>
+      <view class="labelBox">
+        <label>原因：</label>
+        <input type="text" name="reason" value="{{item.reason}}" />
+      </view>
+      <view class="labelBox">
+        <label>次数：</label>
+        <input type="text" name="absence" value="{{item.absence}}" />
+      </view>
+
+      <view class="buttonBox">
+        <button type="primary" form-type="submit">提交修改</button>
+        <button type="warn" bindtap="deleteD">删除此档案</button>
+      </view>
+  </form>
+</block>

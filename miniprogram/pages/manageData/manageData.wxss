@@ -1,0 +1,41 @@
+
+.searchBox{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #f5f5f5;
+}
+
+
+.searchBox > input{
+  display: block;
+  height: 50px;
+  width: 60vw;
+  margin-left: 10vw;
+  border: 5px solid #6dc8bf;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.searchBox > .buttomBox{
+  margin-left: auto;
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.searchBox > button{
+  width: 10px;
+  
+  
+}
+
+.infoBox{
+  width: 60vw;
+  margin: 20px 10vw;
+  border: 5px solid #a2c5c2;
+  border-radius: 30px;
+  text-align: center;
+}

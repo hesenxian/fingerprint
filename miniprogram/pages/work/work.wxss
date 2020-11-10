@@ -1,0 +1,48 @@
+/* pages/work/work.wxss */
+.funbox{
+  border: cadetblue;
+  border-style: solid;
+  height: 40vw;
+  width: 96vw;
+  border-radius: 20px;
+  margin: 5vw auto;
+}
+
+.title{
+  font-size: x-large;
+  text-align: center;
+  color: cadetblue;
+  margin: 2vw;
+  font-weight: bold;
+}
+
+.fingerbox{
+  display: flex;
+  margin: 2vw auto;
+}
+
+.fun{
+  margin: 2vw auto;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+  border-color: #a2c5c2;
+  border-style: solid;
+}
+
+.fun_png{
+  width: 12vw;
+  height: 12vw;
+  margin:2vw 4vw;
+}
+
+.funtips{
+  margin: -3vw;
+  color: blueviolet;
+  text-align: center;
+}
+
+
+
+
+

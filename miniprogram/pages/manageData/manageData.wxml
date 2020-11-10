@@ -1,0 +1,22 @@
+<form bindsubmit="dataQuery" bindreset="dataReset">
+  <view class="searchBox">
+    <input type="text" name="query" placeholder="输入学号进行查询" />
+    <view class="buttomBox">
+      <button size="mini" type="primary" form-type="submit"><text>查\n询</text></button>
+      <button size="mini" type="primary" form-type="reset"><text>重\n载</text></button>
+    </view>
+  </view>
+</form>
+
+<view style="display:block;height:60px"></view>
+
+<block wx:for="{{tt}}">
+  <view class="infoBox">
+    <card bindtap="dataModify" data-id="{{item._id}}">
+      <view>学号:{{item.no}}</view>
+      <view>姓名:{{item.name}}</view>
+      <view>班级:{{item.class}}</view>
+      <view>缺勤次数:{{item.absence}} </view>
+    </card>
+  </view>
+</block>
