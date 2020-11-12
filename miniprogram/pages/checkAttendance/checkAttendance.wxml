@@ -4,6 +4,7 @@
     <view class="tabList {{tab==0 ? 'on' : ''}}" data-current="0" bindtap="tab_click">全部:{{total}}</view>
     <view class="tabList {{tab==1 ? 'on' : ''}}" data-current="1" bindtap="tab_click">已签到:{{signed}}</view>
     <view class="tabList {{tab==2 ? 'on' : ''}}" data-current="2" bindtap="tab_click">未签到:{{absent}}</view>
+    <view class="tabList {{tab==3 ? 'on' : ''}}" data-current="3" bindtap="tab_click">请假:{{leave}}</view>
   </view>
 <!-- 选项卡--全部学生 -->
   <swiper current="{{tab}}" class="swiper-box" duration="300" bindchange="tab_slide"
@@ -17,7 +18,8 @@
             <card data-id="{{item._id}}" bindtap="statusModify">
               <view class="studentBox" >
                 <image wx:if="{{item.status == '已签到'}}" src='../../images/yiqiandao.png'></image>
-                <image wx:else src='../../images/weiqiandao.png'></image>
+                <image wx:if="{{item.status == '请假'}}" src='../../images/qingjia.png'></image>
+                <image wx:if="{{item.status == '未签到'}}" src='../../images/weiqiandao.png'></image>
                 <text>{{item.no}}</text>
                 <view>{{item.name}}</view>
               </view>
@@ -45,8 +47,6 @@
       </scroll-view>
     </swiper-item>
 
-
-<!-- 选项卡--未签到学生 -->
     <swiper-item>
       <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
         <view class="box"></view>
@@ -54,6 +54,25 @@
           <card data-id="{{item._id}}" bindtap="statusModify">
           <view wx:if="{{item.status == '未签到'}}" class="listBox" bindtap="statusModify">
             <image src='../../images/weiqiandao.png'></image>
+            <text class="no">{{item.no}}</text>
+            <text class="name">{{item.name}}</text>
+            <text class="absence">缺勤次数：{{item.absence}}</text>
+          </view>
+        </card>
+        </block>
+        <view class="box"></view>
+      </scroll-view>
+    </swiper-item>
+
+
+<!-- 选项卡--请假学生 -->
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+        <view class="box"></view>
+        <block wx:for="{{tt}}" >
+          <card data-id="{{item._id}}" bindtap="statusModify">
+          <view wx:if="{{item.status == '请假'}}" class="listBox" >
+            <image src='../../images/qingjia.png'></image>
             <text class="no">{{item.no}}</text>
             <text class="name">{{item.name}}</text>
             <text class="absence">缺勤次数：{{item.absence}}</text>
@@ -70,7 +89,7 @@
 
   <!-- 悬浮刷新与停止按钮 -->
   <view>
-    <image class="funcbox" src="../../images/shuaxin.png" bindtap="fresh"></image>
+    
     <image class="funcbox1" src="../../images/zhongzhi.png"></image>
     <image class="tips" src="../../images/guanyu.png" bindtap="openConfirm"></image>
   </view>

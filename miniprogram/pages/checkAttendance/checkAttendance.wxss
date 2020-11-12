@@ -95,7 +95,7 @@ border-bottom: 5rpx solid #6dc8bf;
 .tabList{  
 font-size: 29rpx;  
   display: inline-block;  
-  width: 33.3%;  
+  width: 25%;  
   color: #333; 
 }
 
